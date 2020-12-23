@@ -132,6 +132,7 @@ android {
 
         release {
             debuggable false
+            applicationIdSuffix ".foss"
             jniDebuggable false
             minifyEnabled true
             shrinkResources false

@@ -1,6 +1,8 @@
+.cxx/
 .idea/
 .gradle/
 build/
 obj/
+API_KEYS
 *.iml
 local.properties
