@@ -168,7 +168,6 @@ public abstract class BaseLocationAdapter extends RecyclerListView.SelectionAdap
                         continue;
                     }
                     TLRPC.TL_botInlineMessageMediaVenue mediaVenue = (TLRPC.TL_botInlineMessageMediaVenue) result.send_message;
-                    iconUrls.add("https://ss3.4sqi.net/img/categories_v2/" + mediaVenue.venue_type + "_64.png");
                     TLRPC.TL_messageMediaVenue venue = new TLRPC.TL_messageMediaVenue();
                     venue.geo = mediaVenue.geo;
                     venue.address = mediaVenue.address;

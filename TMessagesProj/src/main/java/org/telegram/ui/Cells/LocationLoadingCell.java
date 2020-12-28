@@ -22,19 +22,14 @@ import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.LayoutHelper;
-import org.telegram.ui.Components.RadialProgressView;
 
 public class LocationLoadingCell extends FrameLayout {
 
-    private RadialProgressView progressBar;
     private TextView textView;
     private ImageView imageView;
 
     public LocationLoadingCell(Context context) {
         super(context);
-
-        progressBar = new RadialProgressView(context);
-        addView(progressBar, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER));
 
         imageView = new ImageView(context);
         imageView.setImageResource(R.drawable.location_empty);
@@ -56,7 +51,6 @@ public class LocationLoadingCell extends FrameLayout {
     }
 
     public void setLoading(boolean value) {
-        progressBar.setVisibility(value ? VISIBLE : INVISIBLE);
         textView.setVisibility(value ? INVISIBLE : VISIBLE);
         imageView.setVisibility(value ? INVISIBLE : VISIBLE);
     }

@@ -302,10 +302,6 @@ public class ChatAttachAlertLocationLayout extends ChatAttachAlert.AttachAlertLa
             iconLayout.setBackground(Theme.createCircleDrawable(AndroidUtilities.dp(36), LocationCell.getColorForIndex(location.num)));
             frameLayout.addView(iconLayout, LayoutHelper.createFrame(36, 36, Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM, 0, 0, 0, 4));
 
-            BackupImageView imageView = new BackupImageView(context);
-            imageView.setImage("https://ss3.4sqi.net/img/categories_v2/" + location.venue.venue_type + "_64.png", null, null);
-            iconLayout.addView(imageView, LayoutHelper.createFrame(30, 30, Gravity.CENTER));
-
             ValueAnimator animator = ValueAnimator.ofFloat(0.0f, 1.0f);
             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 

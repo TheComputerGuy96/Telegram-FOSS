@@ -337,7 +337,6 @@ public class LocationActivityAdapter extends BaseLocationAdapter implements Loca
                 break;
             }
             case 4:
-                ((LocationLoadingCell) holder.itemView).setLoading(searching);
                 break;
             case 6:
                 ((SendLocationCell) holder.itemView).setHasLocation(gpsLocation != null);
