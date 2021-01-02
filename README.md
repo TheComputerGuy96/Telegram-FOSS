@@ -62,6 +62,8 @@ You can also join `#telegram-foss:matrix.org` via [matrix](https://matrix.to/#/#
 - Google Voice integration
 - HockeyApp crash reporting and self-updates
 - Google SMS retrieval. You have to type the code manually
+- Foursquare bot in location menu
+- Usage stats in WebView
 
 *Other:*
 - Allow to set a proxy before login
